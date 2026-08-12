@@ -19,7 +19,7 @@
   tbody tr:hover { background: #8881; }
 </style></head><body>
 <h1>Public Leaderboard — Skin-Lesion Competition</h1>
-<p class="sub">Ranked by best public Macro-F1 · 0 team(s) · 0 submission(s) · updated 2026-08-12T10:48:16+09:00</p>
+<p class="sub">Ranked by best public Macro-F1 · 0 team(s) · 0 submission(s) · updated 2026-08-12T13:09:19+09:00</p>
 <table>
   <thead><tr>
     <th>#</th><th>Team</th><th>Macro-F1</th><th>Bal. Acc</th>
@@ -31,4 +31,20 @@
 </table>
 <p class="sub">Macro-F1 is the primary metric. Ties break on balanced accuracy, then
 sensitivity, AUROC, specificity. This board never reveals labels or per-sample results.</p>
+
+<h2>Recent submissions</h2>
+<p class="sub">Every submission we have seen, newest first — scored and rejected alike.
+If yours is not here at all, it never reached us: check that the file is committed to
+<code>submissions/public/</code> on <code>main</code> and pushed.</p>
+<table>
+  <thead><tr>
+    <th>When</th><th>Team</th><th>Submission</th><th>Status</th><th>Macro-F1 / reason</th>
+  </tr></thead>
+  <tbody>
+    <tr><td class="muted" colspan="5">No submissions yet.</td></tr>
+  </tbody>
+</table>
+<p class="sub">A rejected submission does not use up one of your two daily scores —
+fix it and push again. Validate before you push with
+<code>python -m skin_project.prediction_validation --predictions out.csv</code>.</p>
 </body></html>
